@@ -1,0 +1,48 @@
+module Base
+{
+       
+recipe Slice Fillet
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        Bass/Catfish/Perch/Crappie/Panfish/Pike/Trout,
+
+        Result:FishFillet=2,
+        Sound:SliceMeat,
+        Time:60.0,
+        OnTest:Recipe.OnTest.CutFish,
+        OnCreate:Recipe.OnCreate.CutFish,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+	recipe Slice Fillet
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,AtlanticCod/AtlanticHalibut/AtlanticHerring/AtlanticMackerel/AtlanticTomcod/SummerFlounder/Haddock/Lumpfish/Pollack/RainbowSmelt/SpinyDogfish/StripedBass/WhitePerch/WinterFlounder/BrookTrout/BrownTrout/Gaspereau/RainbowSmelt/BrownBullheadCatfish/Bass/Catfish/Perch/Crappie/Panfish/Pike/Trout,
+
+        Result:FishFillet=2,
+        Sound:SliceMeat,
+        Time:350.0,
+        OnTest:Recipe.OnTest.CutFish,
+        OnCreate:Recipe.OnCreate.CutFish,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Sound:SliceMeat,
+    }
+	
+	recipe Slice Fillet
+    {
+        keep [Recipe.GetItemTypes.SharpKnife]/MeatCleaver,
+        AtlanticSalmon,
+
+        Result:Salmon=5,
+        Sound:SliceMeat,
+        Time:600.0,
+        OnTest:Recipe.OnTest.CutFish,
+        OnCreate:Recipe.OnCreate.CutFish,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Sound:SliceMeat,
+    }
+
+}

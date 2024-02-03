@@ -1,0 +1,4 @@
+Queens County
+ <LINE> <LINE>
+ The central county of the island, Queens County is the agricultural heartland of the island. It is also home to the largest city on the island, Charlottetown. Numerous smaller towns are scattered across the county as well.
+
